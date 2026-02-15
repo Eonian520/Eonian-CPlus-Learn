@@ -30,3 +30,8 @@ inline unsigned BinaryFunction(unsigned long n) {
     }
     return result;
 }
+
+// 基于递归函数的实现
+inline unsigned BinaryRe(unsigned long n) {
+    return n == 0 ? 0 : n % 10 + 2 * BinaryRe(n / 10);
+}
